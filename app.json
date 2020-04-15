@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "微天气",
+        "navigationBarTextStyle": "black"
+    },
+    "permission": {
+      "scope.userLocation" : {
+        "desc" :"微天气需要获取您的当前位置"
+      }
+    },  
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

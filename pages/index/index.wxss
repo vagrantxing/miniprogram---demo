@@ -1,0 +1,88 @@
+.content{
+  padding: 10rpx ;
+  font-size: 30rpx ;
+  color: #000 ;
+}
+/* 当天的天气信息 */
+.info{
+  padding: 10rpx ;
+  margin-bottom: 10rpx ;
+  color: #000;
+}
+.now_city{
+  margin-bottmo: 10rpx ;
+  border-bottom: 1px solid #666;
+}
+.date{
+  margin-left: 10rpx ;
+}
+.temp{
+  font-size: 100rpx ;
+  text-align: center ;
+  padding: 40rpx 0 ;
+}
+.weather{
+  font-size: 26rpx ;
+}
+
+/* 昨天天气信息 */
+.yesterday{
+  border: 1rpx solid #000 ;
+  border-radius: 15rpx ;
+  padding: 15rpx 10rpx ;
+  margin-bottom: 40rpx ;
+}
+.yesterday_info{}
+.yesterday_title{
+  color: #666 ;
+  font-size: 26rpx ;
+}
+.weather_detail{
+  font-size: 26rpx ;
+}
+
+/* 最近五天天气信息 */
+.after_five_weather{
+  display: flex ;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+.weather_item{
+  flex: 1 ;
+  margin-right: 7rpx ;
+  border: 1px solid #000 ;
+  border-radius: 7rpx ;
+}
+.item_detail{
+  height: 80rpx ;
+  line-height: 80rpx ;
+  text-align: center ;
+}
+.item_detail.date{
+  height: 160rpx ;
+  color: #666 ;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: space-around ;
+  align-items: center ;
+  border-bottom: 1px dashed #000 ;
+}
+
+/* 搜索 */
+.search{
+  display: flex ;
+  padding: 10rpx ;
+}
+.search input{
+  flex: 7 ;
+  height: 64rpx ;
+  border-radius: 7rpx ;
+  border: 1px solid #ccc ;
+}
+.search button{
+  flex: 2 ;
+  margin-left: 10rpx ;
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+}

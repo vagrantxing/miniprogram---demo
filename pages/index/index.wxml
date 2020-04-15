@@ -1,0 +1,51 @@
+<view class="content">
+  <!-- 当天的天气信息 -->
+    <view class="info">
+        <!-- 当前城市位置及时间 -->
+      <view class="now_city">
+          <text class="city_name">{{weatherInfo.city}}</text>
+          <text class="date">({{today}})</text>
+      </view>
+      <!-- 当前温度 -->
+      <view class="temp">{{weatherInfo.wendu}}℃</view>
+      <!-- 当前天气描述 -->
+      <view class="weather">{{weatherInfo.ganmao}}</view>
+    </view>
+    <!-- 昨天天气信息 -->
+    <view class="yesterday">
+        <view class="yesterday_info">
+            <text class="yesterday_title">昨天 {{weatherInfo.yesterday.date}}</text> 
+        </view>
+        <view class="weather_detail">
+            {{weatherInfo.yesterday.type}} <!-- 天气类型 -->
+            {{weatherInfo.yesterday.fx}} <!-- 风向 -->
+            <!-- {{weatherInfo.yesterday.fl}}  --> <!-- 风力  -->
+            {{weatherInfo.yesterday.low}} <!-- 最低温度  -->
+            {{weatherInfo.yesterday.high}} <!-- 最高温度 -->
+        </view>
+    </view>
+    <!-- 最近五天信息 -->
+    <view class="after_five_weather">
+        <view class="weather_item" wx:for="{{weatherInfo.forecast}}" wx:key="{{index}}">
+            <!-- 日期 -->
+            <view class="item_detail date">
+              <text>{{item.date}}</text>
+            </view>
+            <!-- 天气类型 -->
+            <view class="item_detail">{{item.type}}</view>
+            <!-- 最高温度 -->
+            <view class="item_detail">{{item.high}}</view>
+            <!-- 最低温度 -->
+            <view class="item_detail">{{item.low}}</view>
+            <!-- 风向 -->
+            <view class="item_detail">{{item.fengxiang}}</view>
+            <!-- 风力 -->
+            <!-- <view class="item_detail">{{item.fengli}}</view> -->
+        </view>
+    </view>
+    <!-- 搜索 -->
+    <view class="search">
+        <input bindinput="inputIing" type="text" value="{{inputCity}}" placeholder="请输入城市名称" />
+        <button bindtap="searchOther" type="primary" size="mini">查询</button>
+    </view>
+</view>
