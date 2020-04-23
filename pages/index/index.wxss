@@ -57,6 +57,7 @@
   height: 80rpx ;
   line-height: 80rpx ;
   text-align: center ;
+  font-size: 24rpx ;
 }
 .item_detail.date{
   height: 160rpx ;
